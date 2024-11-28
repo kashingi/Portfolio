@@ -3,8 +3,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kashingi Portfolio</title>
+
+    <!-- link your styles here -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
-    
+    <nav id="desktop-nav">
+        <div class="logo">Kashingi Morris</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="humburger-nav">
+        <div class="logo">Kashingi Morris</div>
+        <div class="humburger-menu">
+            <div class="humburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"></a>>About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()"></a>>Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()"></a>>Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"></a>>Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/moris-pasport.png" alt="Kashingi Pasport">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h class="title">Kashingi Morris</h>
+            <p class="section__tect__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-in-brands-solid.svg" alt="Linked in profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kashingi-morris-930a77234/'" width="40px" height="40px">
+                <img src="./assets/github-brands-solid.svg" alt="Linked in profile" class="icon" onclick="location.href='https://github.com/kashingi'" width="40px" height="40px">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
